@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".OrderActivity" >
+
+    <include
+        android:id="@+id/top_header"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_layout" />
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnProcessOrder"
+            style="@style/ButtonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_red"
+            android:text="@string/lbl_btn_process_order"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pnMenuNav"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_header"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shapemenubar" >
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="0.2"
+            android:text="Home" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textColor="#303030" />
+
+        <Button
+            android:id="@+id/btnCancelOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.2"
+            android:text="Cancel" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pnLstDetailOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_menu"
+        android:layout_below="@id/pnMenuNav"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lstDetailOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:fadeScrollbars="false"
+            android:scrollX="0px"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">startup</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section1">Section 1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Startup</string>
+    <string name="header_title">Food Cart</string>
+    <string name="footer_title">Ofertas del dia</string>
+    <string name="str_name_company">El Consulado Restaurante</string>
+    <string name="title_activity_product_list">Produc List</string>
+    <string name="title_activity_daily_deals">DailyDealsActivity</string>
+    <string name="title_activity_order">Order</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+    
+    <string name="lbl_img_descripcion"></string>
+    <string name="lbl_btn_order_product">Pedir >></string>
+    <string name="lbl_btn_add_product">Agregar al Pedido</string>
+    <string name="lbl_btn_process_order">Terminar Pedido</string>
+</resources>
+
